@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Nunito:wght@300&display=swap');
+
+/**{
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}*/
+
+.sticky-top {
+    top: -1px;
+}
+
+.hmal-header-top {
+    margin-top: 1rem;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+}
+
+.hmal-header-top .row{
+    margin-right: 3.5rem;
+    margin-left: 3.5rem;
+}
+
+.hmal-header-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hmal-header-top ul li {
+    float: left;
+    padding-right: 1rem;
+}
+
+.hmal-header-top ul li i{
+    margin-right: 5px;
+}
+
+.hmal-header-top ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 0.6rem;
+}
+
+.hmal-header-bottom{
+    background-color: transparent;
+}
+
+.hmal-banner{
+    margin-top: -7rem;
+}
+
+.hmal-bg-white{
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.uk-slideshow-items h1{
+    font-size: 5rem;
+}
+
+.uk-slideshow-items p{
+    font-size: 3.5rem;
+}
+
+.uk-slideshow-items .btn{
+    padding: 0.5rem 4.5rem;
+    font-size: 1.5rem;
+}
+
+.uk-position-center {
+    left: calc(30% - var(--uk-position-margin-offset));
+}
+
+@media (max-width: 987px) {
+    .hmal-header-top {
+        text-align: center;
+    }
+
+    .hmal-banner{
+        margin-top: unset;
+    }
+
+    .hmal-header-top ul li {
+        float: unset;
+        padding-right: unset;
+    }
+
+    .d-flex {
+        display: unset!important;
+    }
+
+    .justify-content-end {
+        justify-content: unset !important;
+    }
+
+    .hmal-header-top ul li:not(:last-child)::after {
+        content: "";
+        margin-left: unset;
+        text-align: center;
+    }
+
+    .uk-slideshow-items h1{
+        font-size: 2rem;
+    }
+
+    .uk-slideshow-items p{
+        font-size: 1.5rem;
+    }
+
+    .uk-slideshow-items .btn{
+        padding: 0.5rem 2.5rem;
+        font-size: 0.75rem;
+    }
+
+    .uk-position-center {
+        left: calc(50% - var(--uk-position-margin-offset));
+    }
+}
+

@@ -10,13 +10,14 @@
     <link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-<section class="bg-white">
+<!-- Header Top Start -->
+<section class="bg-white hmal-header-top">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
                 <p>長者社區照顧及支援服務</p>
             </div>
-            <div class="col-lg-6 text-end">
+            <div class="col-lg-6 d-flex justify-content-end">
                 <ul>
                     <li>
                         <i class="fa-regular fa-envelope"></i> 電郵：info@sss.org.hk
@@ -32,17 +33,19 @@
         </div>
     </div>
 </section>
+<!-- Header Top End -->
 
-<header class="sticky-top">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<!-- Navbar Start -->
+<header class="sticky-top hmal-header-bottom">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://placehold.co/350x90/png" class="img-fluid" alt=""/>
+                <img src="https://placehold.co/300x80/png" class="img-fluid" alt=""/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars p-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -77,26 +80,27 @@
         </div>
     </nav>
 </header>
+<!-- Navbar End -->
 
-<section class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-         uk-slideshow="min-height: 300; max-height: 800">
+<!-- Banner Start -->
+<section class="uk-position-relative uk-visible-toggle uk-dark hmal-banner" tabindex="-1" uk-slideshow="min-height: 300; max-height: 800; animation: push">
     <ul class="uk-slideshow-items">
         <li>
             <img src="https://placehold.co/1200x800/png" alt="" uk-cover>
-        </li>
-        <li>
-            <img src="https://placehold.co/1200x800/png" alt="" uk-cover>
-        </li>
-        <li>
-            <img src="https://placehold.co/1200x800/png" alt="" uk-cover>
+            <div class="uk-text-left@m uk-position-center uk-text-center">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a class="btn btn-lg btn-outline-secondary" href="#">Link</a>
+            </div>
         </li>
     </ul>
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
-       uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
-       uk-slideshow-item="next"></a>
-</section>
 
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+</section>
+<!-- Banner End -->
+
+<!-- About Start -->
 <section class="container pt-5">
     <div class="row">
         <div class="col-lg-6">
@@ -118,11 +122,13 @@
         </div>
     </div>
 </section>
+<!-- About End -->
 
+<!-- Contact Start -->
 <section class="container pt-5">
     <div class="card">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <h4>樂康齡社區服務</h4>
                 <ul>
                     <li>
@@ -162,7 +168,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="">
                     <h4>聯絡我們</h4>
                     <p>
@@ -197,8 +203,11 @@
         </div>
     </div>
 </section>
+<!-- Contact End -->
 
+<!-- Footer Start -->
 <footer>
+    <!-- Footer Top Start -->
     <div>
         <div class="container">
             <div class="row">
@@ -269,6 +278,9 @@
             </div>
         </div>
     </div>
+    <!-- Footer Top End -->
+
+    <!-- Copyright Start -->
     <div>
         <div class="container">
             <div class="row">
@@ -296,7 +308,9 @@
             </div>
         </div>
     </div>
+    <!-- Copyright End -->
 </footer>
+<!-- Footer End -->
 
 <script src="assets/vendor/Bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/Uikit/js/uikit.min.js"></script>
