@@ -71,6 +71,17 @@
     left: calc(30% - var(--uk-position-margin-offset));
 }
 
+.hmal-contact{
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.hmal-contact-form{
+    background: black;
+    padding: 1rem;
+    color: white;
+}
+
 @media (max-width: 987px) {
     .hmal-header-top {
         text-align: center;
