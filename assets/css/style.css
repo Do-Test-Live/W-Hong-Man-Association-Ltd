@@ -3,7 +3,7 @@
 :root {
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-blue: #283454;
+    --color-blue: #192136;
     --color-pink: #f3889a;
     --color-grey: #828690;
     --color-light: #f8f7f4;
@@ -65,10 +65,12 @@
 
 .uk-slideshow-items h1 {
     font-size: 5rem;
+    color: var(--color-pink);
 }
 
 .uk-slideshow-items p {
     font-size: 3.5rem;
+    color: var(--color-blue);
 }
 
 .uk-slideshow-items .btn {
@@ -90,7 +92,7 @@
 }
 
 .hmal-contact-form {
-    background: var(--color-black);
+    background: var(--color-blue);
     padding: 1rem;
     color: var(--color-white);
     border-radius: 0 15px 15px 0;
@@ -223,7 +225,7 @@
         padding-right: unset;
     }
 
-    .d-flex {
+    .hmal-header-top .d-flex {
         display: unset !important;
     }
 
@@ -256,6 +258,11 @@
 
     .hmal-contact-form{
         border-radius: 0 0 15px 15px;
+    }
+
+    #hmal-scrollToTop {
+        bottom: 25px;
+        right: 10px;
     }
 }
 
