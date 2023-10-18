@@ -83,7 +83,8 @@
 <!-- Navbar End -->
 
 <!-- Banner Start -->
-<section class="uk-position-relative uk-visible-toggle uk-dark hmal-banner" tabindex="-1" uk-slideshow="min-height: 300; max-height: 800; animation: push">
+<section class="uk-position-relative uk-visible-toggle uk-dark hmal-banner" tabindex="-1"
+         uk-slideshow="min-height: 300; max-height: 800; animation: push">
     <ul class="uk-slideshow-items">
         <li>
             <img src="https://placehold.co/1200x800/png" alt="" uk-cover>
@@ -95,8 +96,10 @@
         </li>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+       uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+       uk-slideshow-item="next"></a>
 </section>
 <!-- Banner End -->
 
@@ -126,51 +129,71 @@
 
 <!-- Contact Start -->
 <section class="container pt-5">
-    <div class="hmal-contact ps-3">
+    <div class="hmal-contact ps-lg-3">
         <div class="row">
-            <div class="col-lg-4 p-3">
-                <h4>樂康齡社區服務</h4>
+            <div class="col-lg-4 p-3 hmal-contact-info">
+                <h3>樂康齡社區服務</h3>
                 <ul>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        電話號碼 <br/>
-                        3795 2985
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        傳真號碼 <br/>
-                        3795 2934
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        Whatsapp <br/>
-                        9506 5165
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        地址 <br/>
-                        屯門建發里4號Lane Up 5樓507室
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        電郵 <br/>
-                        info@sss.org.hk
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        辦公時間 <br/>
-                        星期一至星期五 : <br/>
-                        上午九時至下午六時 <br/>
+                        <span class="hmal-list-title">電話號碼</span>
                         <br/>
-                        星期六 : <br/>
-                        上午九時至下午一時 <br/>
-                        星期日及公眾假期休息
+                        <span class="hmal-list-details">3795 2985</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-fax"></i>
+                        <span class="hmal-list-title">傳真號碼</span>
+                        <br/>
+                        <span class="hmal-list-details">3795 2934</span>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span class="hmal-list-title">Whatsapp</span>
+                        <br/>
+                        <span class="hmal-list-details">9506 5165</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-city"></i>
+                        <span class="hmal-list-title">地址</span>
+                        <br/>
+                        <span class="hmal-list-details">屯門建發里4號Lane Up 5樓507室</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="hmal-list-title">電郵</span>
+                        <br/>
+                        <span class="hmal-list-details">info@sss.org.hk</span>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="hmal-list-title">辦公時間</span>
+                        <br/>
+                        <span class="hmal-list-details">
+                          星期一至星期五 :
+                        </span>
+                        <br/>
+                        <span class="hmal-list-details">
+                          上午九時至下午六時
+                            </span>
+                        <br/>
+                        <br/>
+                        <span class="hmal-list-details">
+                          星期六 :
+                            </span>
+                        <br/>
+                        <span class="hmal-list-details">
+                          上午九時至下午一時
+                            </span>
+                        <br/>
+                        <span class="hmal-list-details">
+                          星期日及公眾假期休息
+                        </span>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-8">
                 <div class="hmal-contact-form h-100">
-                    <h4>聯絡我們</h4>
+                    <h3>聯絡我們</h3>
                     <p>
                         查詢及意見 <br/>
                         樂康齡致力持續提升服務質素，您的寶貴意見有助我們為您提供更優質的服務。<br/>
@@ -191,7 +214,7 @@
                                 <input type="text" class="form-control">
                             </div>
                             <div class="col-lg-12 mb-3">
-                                <textarea class="form-control" rows="4"></textarea>
+                                <textarea class="form-control" rows="5"></textarea>
                             </div>
                             <div class="col-lg-12 mb-3">
                                 <button type="button" class="btn btn-light">Light</button>
@@ -206,13 +229,13 @@
 <!-- Contact End -->
 
 <!-- Footer Start -->
-<footer>
+<footer class="mt-5">
     <!-- Footer Top Start -->
-    <div>
+    <div class="hmal-footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="https://placehold.co/400x150/png" class="img-fluid" alt=""/>
+                <div class="col-lg-4 hmal-footer-logo">
+                    <img src="https://placehold.co/300x80/png" class="img-fluid" alt=""/>
                     <h4>樂康齡社區服務</h4>
                     <ul>
                         <li>
@@ -229,39 +252,48 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 hmal-footer-menu">
                     <h4>網頁地圖</h4>
                     <ul>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             主頁
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             居家安老
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             社區服務
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             服務中心
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             社區中心
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             長者津貼
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             社區券
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             活動消息
                         </li>
                         <li>
+                            <i class="fa-solid fa-chevron-right"></i>
                             聯絡我們
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 hmal-footer-info">
                     <h4>服務時間</h4>
                     <ul>
                         <li>
@@ -281,15 +313,15 @@
     <!-- Footer Top End -->
 
     <!-- Copyright Start -->
-    <div>
+    <div class="hmal-footer-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <p>
+                    <p class="mt-3">
                         Copyright © 2021 樂康齡社區服務, All Rights Reserved.
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex justify-content-center">
                     <ul>
                         <li>
                             <i class="fa-brands fa-square-facebook"></i>
@@ -311,6 +343,9 @@
     <!-- Copyright End -->
 </footer>
 <!-- Footer End -->
+
+<!-- Scroll To Top -->
+<button id="hmal-scrollToTop"><i class="fa-solid fa-angle-up"></i></button>
 
 <script src="assets/vendor/Bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/Uikit/js/uikit.min.js"></script>
