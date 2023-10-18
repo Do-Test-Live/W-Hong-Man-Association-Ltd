@@ -24,10 +24,23 @@
     font-size: 15px;
 }
 
-.hmal-header-top .row {
+.hmal-header-top {
+    padding-bottom: 0.6rem;
+}
+
+.hmal-header-top .row{
     margin-right: 3.5rem;
     margin-left: 3.5rem;
 }
+
+ .hmal-header-bottom .navbar {
+    margin-right: 4.5rem;
+    margin-left: 3.5rem;
+}
+
+ .hmal-header-bottom img{
+     height: 70px;
+ }
 
 .hmal-header-top ul {
     list-style-type: none;
@@ -55,7 +68,7 @@
 }
 
 .hmal-banner {
-    margin-top: -7rem;
+    margin-top: -6rem;
 }
 
 .hmal-bg-white {
@@ -214,6 +227,11 @@
 @media (max-width: 987px) {
     .hmal-header-top {
         text-align: center;
+    }
+
+    .hmal-header-bottom .navbar {
+        margin-right: unset;
+        margin-left: unset;
     }
 
     .hmal-banner {
