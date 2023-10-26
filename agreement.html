@@ -83,31 +83,91 @@
 
 <!-- Banner Start -->
 
-<div class="uk-child-width uk-light hmal-banner" uk-grid>
-    <div>
-        <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(assets/images/banner/1.png);">
-            <h2 class="uk-h1 text-dark">Agreement</h2>
-        </div>
-    </div>
-</div>
 <!-- Banner End -->
 
 <!-- About Start -->
 <section class="container pt-5">
     <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center align-items-center">
-            <div class="p-3">
-                <h2>關於樂康齡</h2>
-                <p>
-                    樂康齡社區服務是一間根據稅務條例第88條而成立的非牟利慈善機構 (註冊編號 :
-                    91/16691)，並以社會企業模式營運，是一家專注於長者照顧及社區服務的機構，並且是社會福利署『長者社區照顧服務券計劃』認可服務提供者。
-                </p>
-                <p>
-                    我們致力透過不同形式的護理照顧服務，務求為長者創造居家安老的客觀條件，當中包括提供日間和家居照顧服務。讓長者及照顧者按照實際需要及能力得到個人化的服務，並在社區參與正常的社交及閒餘活動，提昇生活質素，達致整全健康的生活模式。
-                </p>
-
-
+        <div class="col-lg-12">
+            <div class="p-3" id="budgeting-pdf">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav hmal-agreement-list justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">資助</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/agreement/logo-l.png"
+                                                                  class="img-fluid" alt=""/></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">主辦</a>
+                            </li>
+                            <li class="nav-item">
+                                <img src="assets/images/agreement/logo-r.png"
+                                                                  class="img-fluid" alt=""/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hmal-agreement-card">
+                    <div class="hmal-agreement-card-inner-section">
+                        <h2 class="text-center mt-3 mb-1 hmal-unset-height fw-bolder">
+                            環境及自然保育基金 碳中和行動
+                        </h2>
+                        <h2 class="text-center mb-3 hmal-unset-height hmal-agreement-header">
+                            「碳中和約章」
+                        </h2>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h4 class="fw-bolder">
+                                    隨著全球暖化的情況日益惡化，為了減少碳排放對環境所造成的破壞。本人 <span
+                                        id="name"></span>願意為此以行動響應碳中和的目標，承諾
+                                </h4>
+                            </div>
+                            <div class="col-12">
+                                <input type="checkbox" id="custom-checkbox-1">
+                                <label for="custom-checkbox-1">一步一步實踐低碳生活，不要將電器置於備用狀態，將已經用完的電器及裝置關閉，減少不必要的能源消耗，合理使用電力、燃氣和水資源</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="checkbox" id="custom-checkbox-2">
+                                <label for="custom-checkbox-2">為減低由碳排放造成的極端天氣，盡量選用大眾交通運輸工具代步或其他低碳出行的方法，藉此達到減少碳排放的目標</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="checkbox" id="custom-checkbox-3">
+                                <label for="custom-checkbox-3">可以選擇較少碳足跡的食材，例如本地蔬果及各種有機食品，甚至是帶有碳足跡標籤的產品，實現低碳經濟</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="checkbox" id="custom-checkbox-4">
+                                <label for="custom-checkbox-4">當外出用膳或外賣時，避免使用一次性即棄容器及餐具，並盡量自備餐具和水瓶，減少額外的浪費</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="checkbox" id="custom-checkbox-5">
+                                <label for="custom-checkbox-5">支持乾淨回收，善用社區中的回收措施，響應金屬、廢紙、塑膠及廚餘等各種分類回收，減少二氧化碳及甲烷等各類溫室氣體的排放</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="checkbox" id="custom-checkbox-6">
+                                <label for="custom-checkbox-6">參與及響應各式有關碳中和的活動，例如植樹活動或可持續發展項目，建立綠色生活習慣及培養公民參與，彰顯公民責任及幫助減緩氣候變化</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+                    <div class="mb-3">
+                        <input type="text" class="form-control hmal-form-control" value="" placeholder="輸入姓名"/>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-success w-100 hmal-btn">同意及下載PDF</button>
+                    </div>
+                </div>
+            </div>
+
+
+<!--            <div id="pdf-btns">
+                <button type="button" class="btn" id="get-pdf" onclick="getPDF();">Save as PDF</button>
+            </div>-->
         </div>
     </div>
 </section>
@@ -263,5 +323,28 @@
 <script src="assets/vendor/jQuery/jquery-3.6.4.min.js"></script>
 <script src="assets/vendor/OwlCarousel/js/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script>
+    function getPDF() {
+        return html2canvas($('#budgeting-pdf'), {
+            background: "#ffffff",
+            onrendered: function (canvas) {
+                let myImage = canvas.toDataURL("image/png");
+                // jspdf changes
+                let pdf = new jsPDF('p', 'mm', 'letter');
+
+                const imgProps = pdf.getImageProperties(myImage);
+                const pdfWidth = pdf.internal.pageSize.getWidth();
+                const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+                pdf.addImage(myImage, 'PNG', 10, 15, pdfWidth - 20, pdfHeight);
+                /*pdf.save('agreement.pdf');*/
+
+                console.log(myImage);
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
