@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Header Top Start -->
-<section class="bg-white hmal-header-top">
+<!--<section class="bg-white hmal-header-top">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
@@ -22,26 +22,26 @@
             <div class="col-lg-6 d-flex justify-content-end">
                 <ul>
                     <li>
-                        <i class="fa-regular fa-envelope"></i> 電郵：info@sss.org.hk
+                        <i class="fa-regular fa-envelope"></i> 電郵：info@hma.ngt.hk
                     </li>
                     <li>
-                        <i class="fa-solid fa-phone"></i> 電話： 3795 2985
+                        <i class="fa-solid fa-phone"></i> 電話： 0000 0000
                     </li>
                     <li>
-                        <i class="fa-brands fa-whatsapp"></i> Whatsapp : 9506 5165
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp : 0000 0000
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!-- Header Top End -->
 
 <!-- Navbar Start -->
 <header class="sticky-top hmal-header-bottom">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" class="img-fluid" alt=""/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,7 +50,7 @@
                 <i class="fa-solid fa-bars p-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!--<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -74,7 +74,7 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="true"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
-                </ul>
+                </ul>-->
             </div>
         </div>
     </nav>
@@ -86,33 +86,18 @@
 <!-- Banner End -->
 
 <!-- About Start -->
-<section class="container pt-5">
+<section class="container">
     <div class="row">
         <div class="col-lg-12">
-            <div class="p-3" id="budgeting-pdf">
+            <div class="p-3" id="agreement-pdf">
                 <div class="row">
-                    <div class="col-12">
-                        <ul class="nav hmal-agreement-list justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">資助</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><img src="assets/images/agreement/logo-l.png"
-                                                                  class="img-fluid" alt=""/></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">主辦</a>
-                            </li>
-                            <li class="nav-item">
-                                <img src="assets/images/agreement/logo-r.png"
-                                                                  class="img-fluid" alt=""/>
-                            </li>
-                        </ul>
+                    <div class="col-12 pt-2">
+                        <img src="assets/images/agreement/top-logo.png" class="img-fluid" alt=""/>
                     </div>
                 </div>
-                <div class="hmal-agreement-card">
+                <div class="hmal-agreement-card mt-3">
                     <div class="hmal-agreement-card-inner-section">
-                        <h2 class="text-center mt-3 mb-1 hmal-unset-height fw-bolder">
+                        <h2 class="text-center mt-3 mb-1 hmal-unset-height fw-bolder hmal-agreement-content">
                             環境及自然保育基金 碳中和行動
                         </h2>
                         <h2 class="text-center mb-3 hmal-unset-height hmal-agreement-header">
@@ -120,7 +105,7 @@
                         </h2>
                         <div class="row">
                             <div class="col-12 text-center">
-                                <h4 class="fw-bolder">
+                                <h4 class="fw-bolder hmal-agreement-content">
                                     隨著全球暖化的情況日益惡化，為了減少碳排放對環境所造成的破壞。本人 <span
                                         id="name"></span>願意為此以行動響應碳中和的目標，承諾
                                 </h4>
@@ -156,10 +141,10 @@
             <div class="row">
                 <div class="col-lg-4 mx-auto">
                     <div class="mb-3">
-                        <input type="text" class="form-control hmal-form-control" value="" placeholder="輸入姓名"/>
+                        <input type="text" class="form-control hmal-form-control" onkeydown="nameInsert(this.value);" id="nameVal" onkeyup="nameInsert(this.value);" value="" placeholder="輸入姓名"/>
                     </div>
                     <div class="mb-3">
-                        <button class="btn btn-success w-100 hmal-btn">同意及下載PDF</button>
+                        <button type="button" class="btn btn-success w-100 hmal-btn" onclick="getPDF()">承諾及下載PDF</button>
                     </div>
                 </div>
             </div>
@@ -175,123 +160,15 @@
 
 <!-- Footer Start -->
 <footer class="mt-5">
-    <!-- Footer Top Start -->
-    <div class="hmal-footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 hmal-footer-logo">
-                    <img src="assets/images/logo.png" class="img-fluid" alt=""/>
-                    <h4>樂康齡社區服務</h4>
-                    <ul>
-                        <li>
-                            地址：屯門建發里4號Lane Up 5樓507室
-                        </li>
-                        <li>
-                            電話：3795 2985
-                        </li>
-                        <li>
-                            傳真：3795 2934
-                        </li>
-                        <li>
-                            電郵：info@sss.org.hk
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 hmal-footer-menu">
-                    <h4>網頁地圖</h4>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                主頁
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                居家安老
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                社區服務
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                服務中心
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                社區中心
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                長者津貼
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                社區券
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                活動消息
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                聯絡我們
-
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 hmal-footer-info">
-                    <h4>服務時間</h4>
-                    <ul>
-                        <li>
-                            星期一至星期五 : 上午九時至下午六時<br/>
-                            星期六 : 上午九時至下午一時<br/>
-                            星期日及公眾假期休息
-                        </li>
-                        <li>
-                            慈善機構註冊編號 : 91/16691<br/>
-                            Registered Charity Number : 91/16691
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer Top End -->
-
     <!-- Copyright Start -->
     <div class="hmal-footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <p class="mt-3 text-lg-start text-center">
-                        Copyright © 2021 樂康齡社區服務, All Rights Reserved.
+                <div class="col-lg-12">
+                    <p class="mt-3 text-center">
+                        Copyright © 2023 All Rights Reserved.
                     </p>
-                </div>
+                </div><!--
                 <div class="col-lg-6 d-flex justify-content-center">
                     <ul>
                         <li>
@@ -307,7 +184,7 @@
                             <i class="fa-brands fa-youtube"></i>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -319,30 +196,45 @@
 <button id="hmal-scrollToTop"><i class="fa-solid fa-angle-up"></i></button>
 
 <script src="assets/vendor/Bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/Uikit/js/uikit.min.js"></script>
 <script src="assets/vendor/jQuery/jquery-3.6.4.min.js"></script>
-<script src="assets/vendor/OwlCarousel/js/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script>
+    function nameInsert(val){
+        document.getElementById('name').innerHTML=val+' ';
+    }
     function getPDF() {
-        return html2canvas($('#budgeting-pdf'), {
-            background: "#ffffff",
-            onrendered: function (canvas) {
-                let myImage = canvas.toDataURL("image/png");
-                // jspdf changes
-                let pdf = new jsPDF('p', 'mm', 'letter');
+        let name=document.getElementById('nameVal').value;
+        let currentDateTime = new Date();
+        let customName = name+"-HMAL-Agreement-";
 
-                const imgProps = pdf.getImageProperties(myImage);
-                const pdfWidth = pdf.internal.pageSize.getWidth();
-                const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-                pdf.addImage(myImage, 'PNG', 10, 15, pdfWidth - 20, pdfHeight);
-                /*pdf.save('agreement.pdf');*/
+        let year = currentDateTime.getFullYear();
+        let month = currentDateTime.getMonth() + 1;
+        let day = currentDateTime.getDate();
 
-                console.log(myImage);
-            }
-        });
+        let hours = currentDateTime.getHours();
+        let minutes = currentDateTime.getMinutes();
+        let seconds = currentDateTime.getSeconds();
+
+        let formattedDate = year + '' + (month < 10 ? '0' : '') + month + '' + (day < 10 ? '0' : '') + day;
+        let formattedTime = (hours < 10 ? '0' : '') + hours + '' + (minutes < 10 ? '0' : '') + minutes + '' + (seconds < 10 ? '0' : '') + seconds;
+
+        let formattedDateTime = customName + formattedDate + formattedTime;
+
+
+        let element = document.getElementById('agreement-pdf');
+
+        let opt = {
+            margin:       0,
+            filename:     formattedDateTime+'.pdf',
+            image:        { type: 'png', quality: 1 },
+            html2canvas:  { scale: 1 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+
+        html2pdf().set(opt).from(element).save();
+
     }
 </script>
 

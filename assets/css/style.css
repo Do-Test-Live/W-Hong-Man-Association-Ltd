@@ -257,6 +257,10 @@ p, li {
     height: 65px;
 }
 
+.hmal-form-control::placeholder {
+    text-align: center;
+}
+
 .hmal-btn{
     height: 70px;
     font-weight: bolder;
@@ -271,7 +275,7 @@ p, li {
     text-shadow: -4px 0 2px rgba(141,157,121,1),
     0 -4px 2px rgba(141,157,121,1),
     0 4px 2px rgba(141,157,121,1),
-    4px 0 2px rgba(141,157,121,1);
+    4px 0 2px rgba(141,157,121,1)
 }
 
 .hmal-agreement-card {
@@ -313,7 +317,7 @@ label {
     padding-top: 1em;
     font-size: 20px;
     cursor: pointer;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     font-weight: 500;
 }
 
@@ -338,12 +342,12 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hmal-agreement-list li:nth-child(2) img{
-    max-height: 105px;
+    max-height: 85px;
 }
 
 .hmal-agreement-list li:nth-child(4) img{
     padding-top: 15px;
-    max-height: 105px;
+    max-height: 85px;
 }
 
 .hmal-agreement-list .nav-link {
@@ -353,6 +357,20 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 987px) {
+    .hmal-agreement-list{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hmal-agreement-header{
+        font-size: 30px;
+    }
+
+    .hmal-agreement-content{
+        font-size: 20px;
+    }
+
+
     .hmal-header-top {
         text-align: center;
     }
@@ -383,6 +401,10 @@ input[type="checkbox"]:checked + label:before {
         content: "";
         margin-left: unset;
         text-align: center;
+    }
+
+    .hmal-agreement-list li:nth-child(4) img {
+        height: 80px;
     }
 
     .uk-slideshow-items h1 {
