@@ -334,8 +334,8 @@ label:before {
     position: absolute;
     left: 0;
     top: 0;
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
     background-image: url('../images/agreement/custom-checkbox.png');
     background-size: cover;
 }
