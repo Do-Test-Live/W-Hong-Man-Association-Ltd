@@ -138,18 +138,20 @@
             <div class="row">
                 <div class="col-lg-4 mx-auto">
                     <div class="mb-3">
-                        <input type="text" class="form-control hmal-form-control" onkeydown="nameInsert(this.value);" id="nameVal" onkeyup="nameInsert(this.value);" value="" placeholder="輸入姓名"/>
+                        <input type="text" class="form-control hmal-form-control" onkeydown="nameInsert(this.value);"
+                               id="nameVal" onkeyup="nameInsert(this.value);" value="" placeholder="輸入姓名"/>
                     </div>
                     <div class="mb-3">
-                        <button type="button" class="btn btn-success w-100 hmal-btn" onclick="getPDF()">承諾及下載PDF</button>
+                        <button type="button" class="btn btn-success w-100 hmal-btn" onclick="getPDF()">承諾及下載PDF
+                        </button>
                     </div>
                 </div>
             </div>
 
 
-<!--            <div id="pdf-btns">
-                <button type="button" class="btn" id="get-pdf" onclick="getPDF();">Save as PDF</button>
-            </div>-->
+            <!--            <div id="pdf-btns">
+                            <button type="button" class="btn" id="get-pdf" onclick="getPDF();">Save as PDF</button>
+                        </div>-->
         </div>
     </div>
 </section>
@@ -195,16 +197,19 @@
 <script src="assets/vendor/Bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/jQuery/jquery-3.6.4.min.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+        integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    function nameInsert(val){
-        document.getElementById('name').innerHTML=val+' ';
+    function nameInsert(val) {
+        document.getElementById('name').innerHTML = val + ' ';
     }
+
     function getPDF() {
-        let name=document.getElementById('nameVal').value;
+        let name = document.getElementById('nameVal').value;
         let currentDateTime = new Date();
-        let customName = name+"-HMAL-Agreement-";
+        let customName = name + "-HMAL-Agreement-";
 
         let year = currentDateTime.getFullYear();
         let month = currentDateTime.getMonth() + 1;
@@ -223,15 +228,40 @@
         let element = document.getElementById('agreement-pdf');
 
         let opt = {
-            margin:       0,
-            filename:     formattedDateTime+'.pdf',
-            image:        { type: 'png', quality: 1 },
-            html2canvas:  { scale: 1 },
-            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            margin: 0,
+            filename: formattedDateTime + '.pdf',
+            image: {type: 'png', quality: 1},
+            html2canvas: {scale: 1},
+            jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
         };
 
         html2pdf().set(opt).from(element).save();
 
+
+        let checkedCheckboxes = [];
+
+        for (let i = 1; i <= 6; i++) {
+            let checkboxId = "custom-checkbox-" + i;
+            let checkbox = document.getElementById(checkboxId);
+            if (checkbox.checked) {
+                checkedCheckboxes.push(i);
+            }
+        }
+
+        let data = {
+            name: name,
+            checkedCheckboxes: checkedCheckboxes
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "insert.php",
+            data: data,
+            success: function (response) {
+                alert('Agreement Submitted Successful');
+                window.location.href = 'agreement.html';
+            }
+        });
     }
 </script>
 
