@@ -14,7 +14,7 @@ $db_handle = new DBController();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Investor - HMAL</title>
+    <title>Agreement - HMAL</title>
 
     <?php require_once 'include/css.php'; ?>
 
@@ -72,7 +72,15 @@ $db_handle = new DBController();
                                     <tr>
                                         <td><?php echo $i + 1; ?></td>
                                         <td><?php echo $data[$i]["name"]; ?></td>
-                                        <td><?php echo $data[$i]["datetime"]; ?></td>
+                                        <td>
+                                            <?php
+                                            $originalDatetime = $data[$i]["datetime"];
+
+                                            $formattedDatetime = date('h:i:s A d/m/Y', strtotime($originalDatetime));
+
+                                            echo $formattedDatetime;
+                                            ?>
+                                        </td>
                                     </tr>
                                 <?php } ?>
                                 </tbody>

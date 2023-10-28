@@ -259,7 +259,14 @@
             data: data,
             success: function (response) {
                 alert('Agreement Submitted Successful');
-                window.location.href = 'agreement.html';
+
+                for (let i = 1; i <= 6; i++) {
+                    let checkboxId = "custom-checkbox-" + i;
+                    let checkbox = document.getElementById(checkboxId);
+                    checkbox.checked = false;
+                }
+
+                document.getElementById('nameVal').value = '';
             }
         });
     }
