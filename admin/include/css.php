@@ -1,3 +1,5 @@
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
 <!-- Custom fonts for this template-->
 <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 <link

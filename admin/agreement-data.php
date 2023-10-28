@@ -39,12 +39,12 @@ $db_handle = new DBController();
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Investor Data</h1>
+                <h1 class="h3 mb-2 text-gray-800">Agreement Data</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Investor Data</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Agreement Data</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -53,29 +53,26 @@ $db_handle = new DBController();
                                 <tr>
                                     <th>SL</th>
                                     <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Invest</th>
+                                    <th>Time</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
                                     <th>SL</th>
                                     <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Invest</th>
+                                    <th>Time</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
                                 <?php
-                                $data = $db_handle->runQuery("SELECT * FROM investor order by id desc");
-                                $row_count = $db_handle->numRows("SELECT * FROM investor order by id desc");
+                                $data = $db_handle->runQuery("SELECT * FROM agreement order by id desc");
+                                $row_count = $db_handle->numRows("SELECT * FROM agreement order by id desc");
                                 for ($i = 0; $i < $row_count; $i++) {
                                     ?>
                                     <tr>
                                         <td><?php echo $i + 1; ?></td>
                                         <td><?php echo $data[$i]["name"]; ?></td>
-                                        <td><?php echo $data[$i]["email"]; ?></td>
-                                        <td><a href="invest.php?invest_id=<?php echo $data[$i]["id"]; ?>">Invest</a></td>
+                                        <td><?php echo $data[$i]["datetime"]; ?></td>
                                     </tr>
                                 <?php } ?>
                                 </tbody>
