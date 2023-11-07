@@ -101,31 +101,49 @@
                             <img src="assets/images/agreement/text.png" class="img-fluid hmal-title-image" alt="">
                         </div>
                         <div class="row">
-                            <div class="col-12 text-center">
-                                <h4 class="fw-bolder hmal-agreement-content">
-                                    隨著全球暖化的情況日益惡化，為了減少碳排放對環境所造成的破壞。本人 <span
-                                        id="name"></span>願意為此以行動響應碳中和的目標，承諾
+                            <div class="col-9 uk-text-justify d-flex h-100 justify-content-center align-items-center">
+                                <h4 class="hmal-agreement-content">
+                                    隨著全球暖化的情況日益惡化，為了減少碳排放對環境所造成的破壞。
+                                    本人 <span id="name"></span>願意為此以行動響應碳中和的目標，承諾
                                 </h4>
+                            </div>
+                            <div class="col-3 d-flex h-100 justify-content-center align-items-center">
+                                <img src="assets/images/agreement/loo.png" class="img-fluid" style="max-width: 70px" alt=""/>
                             </div>
                             <div class="col-12">
                                 <input type="checkbox" id="custom-checkbox-1">
                                 <label for="custom-checkbox-1">一步一步實踐低碳生活，不要將電器置於備用狀態，將已經用完的電器及裝置關閉，減少不必要的能源消耗，合理使用電力、燃氣和水資源</label>
                             </div>
+                            <div class="col-12 text-center">
+                                <img src="assets/images/agreement/dash.png" class="img-fluid" alt=""/>
+                            </div>
                             <div class="col-12">
                                 <input type="checkbox" id="custom-checkbox-2">
                                 <label for="custom-checkbox-2">為減低由碳排放造成的極端天氣，盡量選用大眾交通運輸工具代步或其他低碳出行的方法，藉此達到減少碳排放的目標</label>
+                            </div>
+                            <div class="col-12 text-center">
+                                <img src="assets/images/agreement/dash.png" class="img-fluid" alt=""/>
                             </div>
                             <div class="col-12">
                                 <input type="checkbox" id="custom-checkbox-3">
                                 <label for="custom-checkbox-3">可以選擇較少碳足跡的食材，例如本地蔬果及各種有機食品，甚至是帶有碳足跡標籤的產品，實現低碳經濟</label>
                             </div>
+                            <div class="col-12 text-center">
+                                <img src="assets/images/agreement/dash.png" class="img-fluid" alt=""/>
+                            </div>
                             <div class="col-12">
                                 <input type="checkbox" id="custom-checkbox-4">
                                 <label for="custom-checkbox-4">當外出用膳或外賣時，避免使用一次性即棄容器及餐具，並盡量自備餐具和水瓶，減少額外的浪費</label>
                             </div>
+                            <div class="col-12 text-center">
+                                <img src="assets/images/agreement/dash.png" class="img-fluid" alt=""/>
+                            </div>
                             <div class="col-12">
                                 <input type="checkbox" id="custom-checkbox-5">
                                 <label for="custom-checkbox-5">支持乾淨回收，善用社區中的回收措施，響應金屬、廢紙、塑膠及廚餘等各種分類回收，減少二氧化碳及甲烷等各類溫室氣體的排放</label>
+                            </div>
+                            <div class="col-12 text-center">
+                                <img src="assets/images/agreement/dash.png" class="img-fluid" alt=""/>
                             </div>
                             <div class="col-12">
                                 <input type="checkbox" id="custom-checkbox-6">
@@ -232,7 +250,7 @@
             filename: formattedDateTime + '.pdf',
             image: {type: 'png', quality: 1},
             html2canvas: {scale: 1},
-            jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
+            jsPDF: {unit: 'in', format: [8.5, 11.25], orientation: 'portrait'}
         };
 
         html2pdf().set(opt).from(element).save();

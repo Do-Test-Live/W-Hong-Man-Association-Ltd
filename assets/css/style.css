@@ -323,10 +323,10 @@ label {
     position: relative;
     padding-left: 55px;
     padding-top: 1em;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     margin-bottom: 1em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 label:before {
