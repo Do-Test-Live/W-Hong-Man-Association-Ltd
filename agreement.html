@@ -88,8 +88,13 @@
         <div class="col-lg-12">
             <div class="p-3" id="agreement-pdf">
                 <div class="row">
-                    <div class="col-12 pt-2">
-                        <img src="assets/images/agreement/top-logo.png" class="img-fluid" alt=""/>
+                    <div class="col-12 pt-2 text-end">
+                        <div id="main-image">
+                            <img src="assets/images/agreement/top-logo-3.png" class="img-fluid" alt=""/>
+                        </div>
+                        <div id="print-image" style="display: none">
+                            <img src="assets/images/agreement/top-logo-2.png" class="img-fluid" alt=""/>
+                        </div>
                     </div>
                 </div>
                 <div class="hmal-agreement-card mt-3">
@@ -108,7 +113,7 @@
                                 </h4>
                             </div>
                             <div class="col-3 d-flex h-100 justify-content-center align-items-center">
-                                <img src="assets/images/agreement/loo.png" class="img-fluid" style="max-width: 70px" alt=""/>
+                                <img src="assets/images/agreement/loo.png" class="img-fluid" style="max-width: 100px" alt=""/>
                             </div>
                             <div class="col-12">
                                 <input type="checkbox" id="custom-checkbox-1">
@@ -155,9 +160,7 @@
             </div>
             <div class="text-center">
                 <p>
-                    免責聲明：在此刊物/活動內表達的任何意見、
-                    研究成果、結論或建議，並不一定反映香港特別
-                    行政區政府及環境及自然保育基金的觀點
+                    免責聲明：在此刊物/活動內表達的任何意見、 研究成果、結論或建議，並不一定反映香港特別行政區政府及環境及自然保育基金的觀點
                 </p>
             </div>
             <div class="row">
@@ -167,7 +170,7 @@
                                id="nameVal" onkeyup="nameInsert(this.value);" value="" placeholder="輸入姓名"/>
                     </div>
                     <div class="mb-3">
-                        <button type="button" class="btn btn-success w-100 hmal-btn" onclick="getPDF()">承諾及下載PDF
+                        <button type="button" class="btn btn-success w-100 hmal-btn" onclick="getPDF()">承諾及下載約章
                         </button>
                     </div>
                 </div>
@@ -232,6 +235,8 @@
     }
 
     function getPDF() {
+        document.getElementById('main-image').style.display = 'none';
+        document.getElementById('print-image').style.display = 'block';
         let name = document.getElementById('nameVal').value;
         let currentDateTime = new Date();
         let customName = name + "-HMAL-Agreement-";
@@ -284,6 +289,9 @@
             data: data,
             success: function (response) {
                 alert('Agreement Submitted Successful');
+
+                document.getElementById('main-image').style.display = 'block';
+                document.getElementById('print-image').style.display = 'none';
 
                 for (let i = 1; i <= 6; i++) {
                     let checkboxId = "custom-checkbox-" + i;
