@@ -17,10 +17,14 @@
 
 h1, h2, h3, h4 {
     font-family: 'Nunito', sans-serif;
+    font-weight: 800;
 }
 
 p, li {
+    font-size: 18px;
     font-family: 'Mulish', sans-serif;
+    text-align: justify;
+    color: #828690;
 }
 
 .sticky-top {
