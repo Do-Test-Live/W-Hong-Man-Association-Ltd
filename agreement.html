@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-3">
-                    <p>
+                    <p class="text-center">
                         免責聲明：在此刊物/活動內表達的任何意見、 研究成果、結論或建議，<br/>
                         並不一定反映香港特別行政區政府及環境及自然保育基金的觀點
                     </p>
@@ -275,7 +275,7 @@
             filename: formattedDateTime + '.pdf',
             image: {type: 'png', quality: 1},
             html2canvas: {scale: 1},
-            jsPDF: {unit: 'in', format: [8.5, 12], orientation: 'portrait'}
+            jsPDF: {unit: 'in', format: [8.5, 12.25], orientation: 'portrait'}
         };
 
         html2pdf().set(opt).from(element).save();
