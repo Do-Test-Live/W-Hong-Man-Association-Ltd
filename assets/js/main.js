@@ -25,3 +25,26 @@ scrollToTopButton.onclick = function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 };
+
+function scrollToId(id) {
+    let navbarHeight = 80;
+    let target = document.getElementById(id);
+    if (target) {
+        window.scrollTo({
+            top: target.offsetTop - navbarHeight,
+            behavior: 'smooth'
+        });
+    }
+}
+
+window.addEventListener('hashchange', function() {
+    let hash = window.location.hash.substring(1);
+    scrollToId(hash);
+});
+
+window.addEventListener('load', function() {
+    if (window.location.hash) {
+        let hash = window.location.hash.substring(1);
+        scrollToId(hash);
+    }
+});

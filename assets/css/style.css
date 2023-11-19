@@ -102,17 +102,17 @@ p, li {
 }
 
 .uk-slideshow-items h1 {
-    font-size: 5rem;
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 2px;
     color: var(--color-primary);
 }
 
 .uk-slideshow-items p {
-    font-size: 3.5rem;
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 2px;
     color: var(--color-blue);
-}
-
-.uk-position-center {
-    left: calc(30% - var(--uk-position-margin-offset));
 }
 
 .hmal-contact {
@@ -189,11 +189,11 @@ p, li {
     margin-bottom: 10px;
 }
 
-.hmal-footer-menu ul li a{
-    color: var(--color-black) ;
+.hmal-footer-menu ul li a {
+    color: var(--color-black);
 }
 
-.hmal-footer-menu ul li a:hover{
+.hmal-footer-menu ul li a:hover {
     color: var(--color-primary);
     text-decoration: none;
 }
@@ -252,7 +252,7 @@ p, li {
     border: 2px solid var(--color-white);
 }
 
-.hmal-form-control{
+.hmal-form-control {
     border: 2px solid black;
     height: 65px;
 }
@@ -261,7 +261,7 @@ p, li {
     text-align: center;
 }
 
-.hmal-btn{
+.hmal-btn {
     height: 70px;
     font-weight: bolder;
     font-size: 20px;
@@ -276,7 +276,7 @@ p, li {
 
 }
 
-.hmal-title-image{
+.hmal-title-image {
     max-width: 300px;
 }
 
@@ -349,11 +349,11 @@ input[type="checkbox"]:checked + label:before {
     padding-left: 1em;
 }
 
-.hmal-agreement-list li:nth-child(2) img{
+.hmal-agreement-list li:nth-child(2) img {
     max-height: 85px;
 }
 
-.hmal-agreement-list li:nth-child(4) img{
+.hmal-agreement-list li:nth-child(4) img {
     padding-top: 15px;
     max-height: 85px;
 }
@@ -364,17 +364,30 @@ input[type="checkbox"]:checked + label:before {
     font-weight: bolder;
 }
 
+.uk-position-center-left {
+    left: 4.5rem;
+}
+
 @media (max-width: 987px) {
-    .hmal-agreement-list{
+    .uk-position-center-left {
+        top: calc(50% - var(--uk-position-margin-offset));
+        left: calc(50% - var(--uk-position-margin-offset));
+        --uk-position-translate-x: -50%;
+        --uk-position-translate-y: -50%;
+        transform: translate(var(--uk-position-translate-x), var(--uk-position-translate-y));
+        width: max-content
+    }
+
+    .hmal-agreement-list {
         flex-direction: column;
         text-align: center;
     }
 
-    .hmal-agreement-header{
+    .hmal-agreement-header {
         font-size: 30px;
     }
 
-    .hmal-agreement-content{
+    .hmal-agreement-content {
         font-size: 20px;
     }
 
@@ -415,7 +428,7 @@ input[type="checkbox"]:checked + label:before {
         height: 80px;
     }
 
-    .hmal-title-image{
+    .hmal-title-image {
         max-width: 220px;
     }
 
