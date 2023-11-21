@@ -372,6 +372,11 @@ input[type="checkbox"]:checked + label:before {
     left: 4.5rem;
 }
 
+.map-margin{
+    position: relative;
+    margin-top: -15rem;
+}
+
 @media (max-width: 987px) {
     .uk-position-center-left {
         top: calc(50% - var(--uk-position-margin-offset));
@@ -460,6 +465,11 @@ input[type="checkbox"]:checked + label:before {
     #hmal-scrollToTop {
         bottom: 25px;
         right: 10px;
+    }
+
+    .map-margin{
+        position: relative;
+        margin-top: unset;
     }
 }
 
