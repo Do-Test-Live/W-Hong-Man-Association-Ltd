@@ -313,8 +313,14 @@ p, li {
     margin-top: unset;
 }
 
-input[type="text"] {
-    text-align: center;
+input[type="text"] {/*
+    text-align: center;*/
+    font-size: 22px;
+    font-weight: bold;
+}
+
+textarea.form-control {/*
+    text-align: center;*/
     font-size: 22px;
     font-weight: bold;
 }
