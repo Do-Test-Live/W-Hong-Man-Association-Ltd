@@ -6,7 +6,7 @@
     --color-black: #000000;
     --color-blue: #192136;
     --color-pink: #f3889a;
-    --color-grey: #828690;
+    --color-grey: #465153;
     --color-light: #f8f7f4;
 }
 
@@ -88,14 +88,15 @@ p, li {
 .hmal-banner-btn {
     padding: 0.5rem 4.5rem;
     font-size: 1.5rem;
-    border: 3px solid var(--color-blue);
-    color: var(--color-black);
+    border: 3px solid var(--color-grey);
+    color: var(--color-grey);
+    background: var(--color-white);
     text-decoration: none;
 }
 
 .hmal-banner-btn:hover {
-    border: 3px solid var(--color-blue);
-    background: var(--color-blue);
+    border: 3px solid var(--color-grey);
+    background: var(--color-grey);
     color: var(--color-white);
     text-decoration: none;
 }
@@ -315,13 +316,13 @@ p, li {
 
 input[type="text"] {/*
     text-align: center;*/
-    font-size: 22px;
+    font-size: 15px;
     font-weight: bold;
 }
 
 textarea.form-control {/*
     text-align: center;*/
-    font-size: 22px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -479,3 +480,8 @@ input[type="checkbox"]:checked + label:before {
     }
 }
 
+.nav-link,.nav-link.active{
+    color: var(--color-grey);
+    font-size: 1.2em;
+    margin-left: 1.25em;
+}
