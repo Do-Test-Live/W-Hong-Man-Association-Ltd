@@ -6,7 +6,7 @@
     --color-black: #000000;
     --color-blue: #192136;
     --color-pink: #f3889a;
-    --color-grey: #465153;
+    --color-grey: #828690;;
     --color-light: #f8f7f4;
 }
 
@@ -195,7 +195,7 @@ p, li {
 }
 
 .hmal-footer-menu ul li a {
-    color: var(--color-black);
+    color: var(--color-grey);
 }
 
 .hmal-footer-menu ul li a:hover {
@@ -480,8 +480,8 @@ input[type="checkbox"]:checked + label:before {
     }
 }
 
-.nav-link,.nav-link.active{
-    color: var(--color-grey);
+.navbar-nav .nav-link.active{
+    color: var(--color-black);
     font-size: 1.2em;
     margin-left: 1.25em;
 }
