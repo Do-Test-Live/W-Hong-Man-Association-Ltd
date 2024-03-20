@@ -14,7 +14,7 @@ $db_handle = new DBController();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agreement - HMAL</title>
+    <title>Agreement - HMA</title>
 
     <?php require_once 'include/css.php'; ?>
 

@@ -127,13 +127,11 @@
         <div class="col-lg-6 d-flex justify-content-center align-items-center">
             <div class="p-3">
                 <p>
-                    康民協進會 Hong Man Association 是政府認可的一個本地註冊慈善團體，創辦 於 2020 年，紥根港島社區。
+                    康民協進會 Hong Man Association 是政府認可的一個本地註冊慈善團體，創辦於 2020 年，紥根港島社區。
                     <br/>
-                    「康民」意指與民同樂，以此機構長久以來持續關懷弱勢社群的需要，致力提 高居民的生活質素，益彰社會大眾的福祉。過往本會致力於宣揚社區公益及環
-                    保意識、舉辦促進健康與文化交流的活動、提供與科技進步結合的生活支援， 建設共融友愛的社會環境。
+                    「康民」意指與民同樂，以此機構長久以來持續關懷弱勢社群的需要，致力提高居民的生活質素，益彰社會大眾的福祉。過往本會致力於宣揚社區公益及環保意識、舉辦促進健康與文化交流的活動、提供與科技進步結合的生活支援， 建設共融友愛的社會環境。
                     <br/>
-                    機構秉承服務社會精神，積極與區內不同團體攜手合作，持續回應社區內的不
-                    同需求，全力為區內各年齡層及階層人士提供全面及優質的服務，與市民大眾 共同攜手努力構建更美好的願景。
+                    機構秉承服務社會精神，積極與區內不同團體攜手合作，持續回應社區內的不同需求，全力為區內各年齡層及階層人士提供全面及優質的服務，與市民大眾共同攜手努力構建更美好的願景。
                 </p>
             </div>
         </div>
@@ -194,25 +192,25 @@
                         康民協進會致力持續提升服務質素，您的寶貴意見有助我們為您提供更優質的服務。<br/>
                         閣下如對康民協進會有任何查詢或意見，歡迎填妥以下表格，我們會儘快與您聯絡。
                     </p>
-                    <form>
+                    <form action="form_data.php" method="post">
                         <div class="row">
                             <div class="col-lg-6 mb-3">
-                                <input type="text" placeholder="姓名*" class="form-control">
+                                <input type="text" placeholder="姓名*" name="name" class="form-control">
                             </div>
                             <div class="col-lg-6 mb-3">
-                                <input type="text" placeholder="電郵地址*" class="form-control">
+                                <input type="text" placeholder="電郵地址*" name="email" class="form-control">
                             </div>
                             <div class="col-lg-6 mb-3">
-                                <input type="text" placeholder="聯絡電話*" class="form-control">
+                                <input type="text" placeholder="聯絡電話*" name="number" class="form-control">
                             </div>
                             <div class="col-lg-6 mb-3">
-                                <input type="text" placeholder="主題*" class="form-control">
+                                <input type="text" placeholder="主題*" name="theme" class="form-control">
                             </div>
                             <div class="col-lg-12 mb-3">
-                                <textarea class="form-control" placeholder="內容" rows="5"></textarea>
+                                <textarea class="form-control" placeholder="內容" name="content" rows="5"></textarea>
                             </div>
                             <div class="col-lg-12 mb-3">
-                                <button type="button" class="btn btn-secondary btn-lg ps-5 pe-5">提交</button>
+                                <button type="submit" name="form_submit" class="btn btn-secondary btn-lg ps-5 pe-5">提交</button>
                             </div>
                         </div>
                     </form>

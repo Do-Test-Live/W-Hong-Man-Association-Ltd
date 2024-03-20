@@ -14,7 +14,7 @@ $db_handle = new DBController();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard - HMAL</title>
+    <title>Dashboard - HMA</title>
 
     <?php require_once 'include/css.php'; ?>
 
