@@ -484,3 +484,7 @@ input[type="checkbox"]:checked + label:before {
     font-size: 1.2em;
     margin-left: 1.25em;
 }
+
+.hma-under-construction, .hma-under-construction p{
+    color: var(--color-primary);
+}
